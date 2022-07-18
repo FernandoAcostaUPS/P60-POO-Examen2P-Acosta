@@ -53,3 +53,8 @@ int Configuracion::dimension() const
     return m_dimension;
 }
 
+void Configuracion::on_btnColor_clicked()
+{
+
+}
+

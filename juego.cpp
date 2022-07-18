@@ -1,5 +1,6 @@
 #include "juego.h"
 #include "ui_juego.h"
+#include "QPainter"
 
 Juego::Juego(QWidget *parent)
     : QMainWindow(parent)
@@ -10,16 +11,12 @@ Juego::Juego(QWidget *parent)
     m_circulo = new Circulo();
     m_circulo->setX(centro.x());
     m_circulo->setY(centro.y());
+
 }
 
 Juego::~Juego()
 {
     delete ui;
-}
-
-Juego::Dibujar()
-{
-   geometry(Circulo);
 }
 
 void Juego::on_btnArriba_released()
@@ -51,12 +48,21 @@ void Juego::on_actionSalir_triggered()
 {
     this->close();
 }
-void Juego::Dibujar();
-
-
-void Juego::on_lienzo_rubberBandChanged(const QRect &viewportRect, const QPointF &fromScenePoint, const QPointF &toScenePoint)
+void Juego::dibujar()
 {
-    DrawWindowBackground;
-    m_circulo
+    lienzo.fill(Qt::white);
+    QPainter painter(&lienzo);
+    int x = 0;
+    int y = 0;
+    QPen pincel;
+    pincel.setWidth(5);
+    pincel.setColor(Qt::black);
+    pincel.setJoinStyle(Qt::MiterJoin);
+    painter.setPen(pincel);
+    painter.setBrush(Qt::yellow);
+
+    int c = ui->lienzo;
+    painter.drawRect(x+25, y+25,50,50);
+
 }
 

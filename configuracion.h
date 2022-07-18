@@ -24,6 +24,8 @@ public:
 private slots:
     void on_btnColor_released();
 
+    void on_btnColor_clicked();
+
 private:
     Ui::Configuracion *ui;
     QColor m_color;

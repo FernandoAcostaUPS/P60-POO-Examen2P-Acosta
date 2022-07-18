@@ -5,6 +5,7 @@
 #include <QDebug>
 #include "configuracion.h"
 #include "circulo.h"
+#include "QPainter"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Juego; }

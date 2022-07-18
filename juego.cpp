@@ -6,7 +6,7 @@ Juego::Juego(QWidget *parent)
     , ui(new Ui::Juego)
 {
     ui->setupUi(this);
-    QPoint centro = ui->marco->geometry().center();
+    QPoint centro = ui->lienzo->geometry().center();
     m_circulo = new Circulo();
     m_circulo->setX(centro.x());
     m_circulo->setY(centro.y());
@@ -20,6 +20,7 @@ Juego::~Juego()
 
 void Juego::on_btnArriba_released()
 {
+
 
 }
 

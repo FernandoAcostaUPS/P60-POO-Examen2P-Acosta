@@ -18,7 +18,6 @@ public:
 
     const QColor &color() const;
     int dimension() const;
-
     void setColor(const QColor &newColor);
     void setDimension(int newDimension);
 
@@ -29,7 +28,6 @@ private:
     Ui::Configuracion *ui;
     QColor m_color;
     int m_dimension;
-
     void setWidgetColor();
 };
 

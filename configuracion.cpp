@@ -1,5 +1,6 @@
 #include "configuracion.h"
 #include "ui_configuracion.h"
+#include <QColor>
 
 Configuracion::Configuracion(QWidget *parent) :
     QDialog(parent),
@@ -17,6 +18,8 @@ Configuracion::~Configuracion()
 
 void Configuracion::on_btnColor_released()
 {
+    QColor(Configuracion);
+    ui->btnColor->setAcceptDrops();
 
 }
 
@@ -28,6 +31,7 @@ void Configuracion::setColor(const QColor &newColor)
 void Configuracion::setDimension(int newDimension)
 {
     m_dimension = newDimension;
+    ui->setupUi(QDialog *Configuracion);
 }
 
 void Configuracion::setWidgetColor()

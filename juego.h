@@ -17,6 +17,7 @@ class Juego : public QMainWindow
 public:
     Juego(QWidget *parent = nullptr);
     ~Juego();
+    Dibujar();
 
 private slots:
     void on_btnArriba_released();
@@ -30,6 +31,10 @@ private slots:
     void on_actionConfigraci0n_triggered();
 
     void on_actionSalir_triggered();
+
+    void on_btnArriba_clicked();
+
+    void on_lienzo_rubberBandChanged(const QRect &viewportRect, const QPointF &fromScenePoint, const QPointF &toScenePoint);
 
 private:
     Ui::Juego *ui;

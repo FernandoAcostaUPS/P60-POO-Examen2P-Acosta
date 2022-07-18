@@ -12,25 +12,25 @@ Circulo::Circulo()
 Circulo::Circulo(int xpos, int ypos)
     :QPoint(xpos, ypos)
 {
-
+    QPai()
 }
 
 Circulo::CirSubir()
 {
-    Circulo.CirSubir;
+
 }
 
 Circulo::CirBajar()
 {
-    Circulo.CirBajar;
+
 }
 
 Circulo::Cirzq()
 {
-    Circulo.Cirzq;
+
 }
 
 Circulo::CirDer()
 {
-    Circulo.CirDer;
+
 }
